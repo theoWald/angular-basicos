@@ -1,0 +1,26 @@
+
+<h1>Heroe component!!</h1>
+
+<h3> {{ nombre }} </h3>
+
+<dl>
+    <td>Nombre: </td>
+    <dd> {{ nombre }}</dd>
+
+    <td>Edad: </td>
+    <dd> {{ edad }}</dd>
+
+    <td>Función: </td>
+    <dd> {{ obtenerNombre() }}</dd>
+
+    <td>Mayusculas: </td>
+    <dd> {{ nombre.toUpperCase() }}</dd>
+
+    <td>Mayusculas v2: </td>
+    <dd> {{ nombreMayus }}</dd>
+
+</dl>
+
+<button (click)="cambiarNombre()"> Cambiar héroe </button>
+
+<button (click)="cambiarEdad()"> Cambiar edad </button>

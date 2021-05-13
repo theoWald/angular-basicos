@@ -1,0 +1,36 @@
+<!-- <h2>{{ 1 + 4 }}</h2> -->
+
+<h1>{{ title }}</h1>
+
+<!-- Aproximación Inicial -->
+<h3>En HTML  </h3>
+<button (click)="numero = numero + 1;"> +1 </button>
+<span> {{numero}} </span>
+<button (click)="numero = numero - 1;"> -1 </button>
+<br />
+<br />
+
+<!-- Primera Aproximación -->
+<h3>SumaResta  </h3>
+<button (click)="sumar()"> +1 </button>
+<span> {{numero2}} </span>
+<button (click)="restar()"> -1 </button> 
+<br />
+<br />
+
+<!-- Segunda Aproximación -->
+<h3>Acumular  </h3>
+<button (click)="acumular(1)"> +1 </button>
+<span> {{numero2}} </span>
+<button (click)="acumular(-1)"> -1 </button>
+<br />
+<br />
+
+<!-- Tarea contador -->
+<h4>La base es: <strong> {{base}} </strong></h4>
+<h3>Acumular con base  </h3>
+<button (click)="acumularBase(base)"> +{{base}} </button>
+<span> {{numero3}} </span>
+<button (click)="acumularBase(base * -1)"> -{{base}} </button>
+<br />
+<br />
