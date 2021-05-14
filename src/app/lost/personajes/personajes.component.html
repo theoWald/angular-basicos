@@ -6,7 +6,7 @@
     <li>Charlie - 500</li>
 </ul>  -->
 <ul>
-    <li *ngFor="let personaje of lostService.personajes">
+    <li *ngFor="let personaje of personajes">
         {{personaje.nombre}} - {{personaje.poder | number}}
     </li>
 </ul>

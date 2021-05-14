@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Personaje } from '../interfaces/personaje.interface';
 import { LostService } from '../services/lost.service';
 
 @Component({
@@ -7,6 +8,10 @@ import { LostService } from '../services/lost.service';
 })
 export class PersonajesComponent {
 
-  constructor( public lostService: LostService) {}
+  get personajes(): Personaje[]{
+    return this.lostService.personajes;
+  }
+
+  constructor( private lostService: LostService) {}
 
 }

@@ -14,12 +14,12 @@ export class AgregarComponent {
     poder: 0
   };
 
-  constructor( public lostService: LostService) {}
+  constructor( private lostService: LostService) {}
 
   agregar(){
     if(this.nuevo.nombre.trim().length === 0){ return; }
     
-    console.log(this.nuevo);
+    //console.log(this.nuevo);
 
     this.lostService.agregarNuevoPersonaje(this.nuevo);
 
