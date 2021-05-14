@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Personaje } from '../interfaces/personaje.interface'
+import { LostService } from '../services/lost.service';
 
 @Component({
   selector: 'app-main-page',
@@ -21,5 +22,12 @@ export class MainPageComponent{
       poder: 15000
     }
   ];
+
+  agregarNuevoPersonaje( argumento: Personaje ){
+    this.personajes.push(argumento);
+  }
+
+  //Estamos inyectando el servicio en este componente
+  constructor( private lostService: LostService) {}
 
 }
